@@ -17,8 +17,24 @@ public class PlaceRepository {
 
     @PostConstruct
     public void init() {
-       add(new Place(1L, "Bar Casa Manolo", "Centro", "12.15", "Muy rico", null, "foto.png"));
-        add(new Place(2L, "Cerveceria Urbion", "Urbion", "12.15", "Muy rico", null, "foto.png"));
+       add(Place.builder()
+               .name("Bar Casa Manolo")
+               .desc("Centro")
+               .coords("12,15")
+               .address("Betis 40")
+               .image("foto.png")
+               .tags(new ArrayList<>(List.of("Triana", "Clasico")))
+       .build());
+
+        add(Place.builder()
+                .name("Cerveceria Urbion")
+                .desc("Centro")
+                .coords("12,15")
+                .address("Urbion")
+                .image("foto.png")
+                .tags(new ArrayList<>(List.of("Triana", "Clasico")))
+                .build());
+
     }
 
     public Place add(Place place) {
