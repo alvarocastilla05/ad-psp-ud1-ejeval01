@@ -55,10 +55,10 @@ public class PlaceController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("{id}/tag/add/{tag}")
+    /*@PutMapping("{id}/tag/add/{tag}")
     public Place addTag(@PathVariable("id") long id, @PathVariable("tag") String tag){
 
-    }
+    }*/
 
 
 }
