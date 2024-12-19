@@ -50,11 +50,12 @@ public class PlaceService {
          repository.delete(id);
     }
 
+    /*
     public Place addTagToPlace(Long id, String tag) {
         //Buscar el place
         //Añadir el tag
         //Modificar el place
 
 
-    }
+    }*/
 }
